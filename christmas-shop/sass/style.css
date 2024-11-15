@@ -1,0 +1,224 @@
+.sue-ellen-francisco-regular {
+    font-family: "Sue Ellen Francisco", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.allura-regular {
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
+
+.montserrat-aaa {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: var(--primary);
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+
+.wrapper {
+    width: 1276px;
+    margin: 0 auto;
+   
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #ff4646;
+    --dark: #181c29;
+    --static-white: #fff;
+    --content-background: #ecf3f8;
+    --tag-purple: #4361ff;
+    --tag-pink: #ff43f7;
+    --tag-green: #06a44f;
+    --primary-10: rgba(255, 70, 70, 0.1);
+    --static-white-20: rgba(255, 255, 255, 0.2);
+    --static-white-40: rgba(255, 255, 255, 0.4);
+    --overlay: rgba(24, 28, 41, 0.8);
+}
+
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Allura", sans-serif;
+    --third-family: "SF Pro", sans-serif;
+}
+
+.text-h2 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--static-white);
+}
+.text-p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 148%;
+    color: var(--dark);
+}
+
+.text-caption {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: var(--static-white);
+}
+
+.header {
+    width: 100%;
+    height: 64px;
+    padding: 0px 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--static-white);
+}
+
+.logo {
+    display: flex;
+    padding: 8px 20px;
+    gap: 8.7px;
+    align-items: center;
+    cursor: url("/christmas-shop/img/img-compressed/pointing-up-finger-svgrepo-com.svg"), pointer;
+    transition: all 0.3s ease;
+}
+
+.logo .logo_text {
+    font-family: Montserrat-SemiBold, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    background-color: var(--primary-10);
+    border-radius: 12px;
+}
+
+.logo .logo_text:hover {
+    color: var(--primary);
+}
+
+/* .header__navigation {
+
+} */
+
+
+.hero {
+    background: url(/christmas-shop/img/img-compressed/bg-snow.png), url(/christmas-shop/img/img-compressed/bg-ball.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 507px;
+    /* padding: 60px 8px; */
+    width: 1440px;
+    height: 524px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  
+}
+
+
+.hero__content {
+    padding: 60px 0px;
+    width: 426px;
+    height: 404px;
+    max-width: 426px;
+    text-align: center;
+}
+
+.hero_congratulation {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: var(--static-white);
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--static-white);
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.hero_link {
+    font-family: Montserrat-SemiBold, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    width: 235px;
+    height: 56px;
+    line-height: 130%;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 32px;
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--dark);
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+    cursor: url("/christmas-shop/img/img-compressed/pointing-up-finger-svgrepo-com.svg"), pointer;
+}
+
+.hero_link:hover {
+    background-color: #fff;
+    color: #181c29;
+    
+}
+
+.hero__content p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: var(--static-white);
+}
