@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christmas shop</title>
     <script src="/christmas-shop/script.js"></script>
-    <link rel="stylesheet" href="/christmas-shop/style.css">
+    <link rel="stylesheet" href="/christmas-shop/sass/style.css">
     <link rel="icon" type="image/svg+xml" href="/christmas-shop/img/snowflake.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="wrapper">
+        <div class="wrapper header__wrapper">
             <a href="/christmas-shop/index.html" class="logo">
                 <div class="logo_img">
                     <img src="/christmas-shop/img/snowflake.svg" alt="logo snowflake">
@@ -44,12 +44,12 @@
         <section class="hero">
             <div class="wrapper">
                 <div class="hero__content">
-                    <p class="hero_congratulation">Merry christmas</p>
+                    <p class="caption">Merry christmas</p>
                     <h1>Gift yourself the magic of new possibilities</h1>
                     <div class="hero__button">
                         <a class="hero_link" href="/christmas-shop/gifts.html">Explore Magical Gifts</a>
                     </div>
-                    <p>and Happy New Year</p>
+                    <p class="caption">and Happy New Year</p>
                 </div>
             </div>
         </section>
@@ -70,10 +70,8 @@
         <section class="slider">
             <div class="wrapper">
                 <div class="slider__head">
-                    <h2>
-                        Become Happier! <br>
-                        IN THE NEW 2025
-                    </h2>
+                    <p class="caption">Become Happier!</p>   
+                    <h2>IN THE NEW 2025</h2>
                 </div>
                 <div class="row">
                     <p class="text_image">LIVE</p>
@@ -103,8 +101,8 @@
         </section>
         <section class="gifts" id="gift">
             <div class="wrapper">
-                <h2 class="gifts_title">Best Gifts</h2>
-                <p class="gifts_description">especially for you</p>
+                <p class="caption">Best Gifts</p>
+                <h2>especially for you</h2>
                 <div class="cards">
                     <article class="card">
                         <img class="card_img" src="/christmas-shop/img/img-compressed/gift-for-work.png" alt="for word gift image">
@@ -140,9 +138,9 @@
         <section class="cta">
             <div class="wrapper">
                 <div class="cta__content">
-                    <p class="cta_text">Ready to start your journey to a better version of yourself?</p>
-                    <a class="cta_link" href="gifts.html">Explore Magical Gifts</a>
-                    <h2 class="cta_timerText">The New Year is Coming Soon...</h2>
+                    <h2 class="cta_text">Ready to start your journey to a better version of yourself?</h2>
+                    <a class="hero_link" href="gifts.html">Explore Magical Gifts</a>
+                    <p class="caption">The New Year is Coming Soon...</p>
                     <ul class="cta_timerBlock">
                         <li class="timer_item">
                             <p class="timerNumber">47</p>
@@ -220,7 +218,7 @@
             </a>
         </div>
         <p class="copiright">© Copyright 2025, All Rights Reserved</p>
-        <a class="rss_link" href="https://rs.school/" target="_blank">Made in Rolling Scopes School</a>
+        <a class="caption" href="https://rs.school/" target="_blank">Made in Rolling Scopes School</a>
     </footer>
 </body>
 </html>
