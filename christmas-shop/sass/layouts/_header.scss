@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 64px;
 }
 
 .navigation {
@@ -18,7 +19,20 @@
 .navigation_item {
     list-style: none;
     padding: 8px 20px;
+    border-radius: 12px;
+    height: 24px;
 }
+
+.navigation_item:hover {
+    background: $primary-10;
+    cursor: pointer;
+    color: $primary;
+    .navigation_link:hover {
+        color: $primary;
+    }
+}
+
+
 
 .logo_text {
     font-family: $font-family;
@@ -38,6 +52,7 @@
     padding: 8px 20px;
     width: 141px;
     height: 40px;
+    text-decoration: none;
 }
 
 .logo_img {
@@ -53,4 +68,13 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $dark;
+    text-decoration: none;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.header__navigation {
+    height: 64px;
 }

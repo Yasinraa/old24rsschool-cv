@@ -1,26 +1,27 @@
-* {
-  box-sizing: border-box;
+@import '../node_modules/normalize.css/normalize.css';
+html {
+  width: 1440px;
 }
 
 body {
   margin: 0;
 }
 
-*,
-*, *::before, *::after {
-  box-sizing: inherit;
+main {
+  border-radius: 20px;
 }
 
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 32px;
-  line-height: 150%;
-  letter-spacing: 0.18em;
+  line-height: 48px;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 8px 8px #181c29;
+  margin: 12px 0;
 }
 
 h2 {
@@ -41,7 +42,11 @@ h2 {
   line-height: 100%;
   letter-spacing: 0.05em;
   text-align: center;
-  color: var(--static-white);
+  color: #fff;
+}
+
+a {
+  display: inline-block;
 }
 
 .wrapper {
@@ -62,6 +67,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 64px;
 }
 
 .navigation {
@@ -71,6 +77,17 @@ main {
 .navigation_item {
   list-style: none;
   padding: 8px 20px;
+  border-radius: 12px;
+  height: 24px;
+}
+
+.navigation_item:hover {
+  background: rgba(255, 70, 70, 0.1);
+  cursor: pointer;
+  color: #ff4646;
+}
+.navigation_item:hover .navigation_link:hover {
+  color: #ff4646;
 }
 
 .logo_text {
@@ -92,6 +109,7 @@ main {
   padding: 8px 20px;
   width: 141px;
   height: 40px;
+  text-decoration: none;
 }
 
 .logo_img {
@@ -107,4 +125,536 @@ main {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #181c29;
+  text-decoration: none;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.header__navigation {
+  height: 64px;
+}
+
+.hero {
+  background: url(/christmas-shop/img/img-compressed/bg-ball.png), url(/christmas-shop/img/img-compressed/bg-snow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 60px 507px;
+  text-align: center;
+  height: 404px;
+}
+
+.hero__wrapper {
+  padding: 60px 0px;
+  width: 426px;
+  height: 284px;
+  max-width: 426px;
+}
+.hero__wrapper .caption {
+  margin: 0;
+}
+
+.hero__button {
+  padding: 20px 32px;
+  color: #fff;
+  background-color: #181c29;
+  border-radius: 20px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  width: 171px;
+  height: 16px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.hero__button .hero_link {
+  font-family: Montserrat-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero__button:hover {
+  background-color: #fff;
+}
+.hero__button:hover .hero_link:hover {
+  color: #181c29;
+}
+
+.about {
+  background: url(/christmas-shop/img/img-compressed/bg-snow.png);
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  padding: 60px 82px;
+  height: 528px;
+  text-align: center;
+}
+
+.about__wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  height: 528px;
+  background: #fff;
+}
+
+.about__content {
+  padding: 0 60px;
+  text-align: left;
+}
+.about__content .caption {
+  color: #ff4646;
+  text-align: left;
+}
+.about__content .about_congratulation {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #181c29;
+  margin: 20px 0;
+}
+.about__content .about_text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148%;
+  color: #181c29;
+  width: 426px;
+}
+
+.about__img {
+  border: 1px solid black;
+  border-style: solid;
+  border-radius: 20px;
+  border-radius: 20px;
+  height: 528px;
+}
+
+.about_img {
+  height: 638px;
+  width: 528px;
+}
+
+.slider {
+  background: url(/christmas-shop/img/img-compressed/bg-snow.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 488px;
+  align-items: center;
+}
+
+.slider__wrapper {
+  box-sizing: border-box;
+  height: 488px;
+  width: 1276px;
+  padding: 60px 0;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  height: 200px;
+  align-items: center;
+}
+.row .img_row {
+  height: 200px;
+  width: 200px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.row .text_image {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.slider__head .caption {
+  margin: 0;
+}
+.slider__head h2 {
+  margin-top: 12px;
+}
+
+.button__arrows {
+  display: flex;
+  align-items: left;
+  padding: 20px 0 0 0;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.button__arrows .slideButton {
+  border: 1px #fff solid;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.button__arrows .slideButton:disabled path,
+.button__arrows .slideButton:disabled {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  opacity: 0.4;
+  cursor: default;
+}
+.button__arrows .sliderButton:hover:not(:disabled) {
+  background-color: #fff;
+}
+.button__arrows .slideButton:hover:not(:disabled) svg path {
+  stroke: #ff4646;
+}
+
+.gifts {
+  padding: 60px 8px;
+  height: 424px;
+  background: url("/christmas-shop/img/img-compressed/bg-snow.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  text-align: center;
+  color: #fff;
+}
+
+.gifts__wrapper {
+  height: 434px;
+}
+.gifts__wrapper .caption {
+  margin: 0 0 15px 0;
+}
+
+h2 {
+  margin: 0 0 16px 0;
+}
+
+.cards {
+  display: flex;
+  gap: 12px;
+  height: 342px;
+}
+
+.card {
+  border-radius: 20px;
+  background-color: #ecf3f8;
+  display: flex;
+  flex-direction: column;
+  cursor: url("./pointinghand-BfbZwVOf.svg"), pointer;
+}
+
+.card .card_header {
+  font-family: Montserrat-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 152%;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  color: #181c29;
+  transition: all 0.3s ease;
+  margin: 0;
+}
+
+.card:hover .card_header {
+  color: #ff4646;
+}
+
+.card_img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card_text {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 19px 20px;
+  text-align: left;
+}
+
+.card_tagForWork {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #4361ff;
+  margin: 0 0 10px 0;
+}
+
+.card_tagForHealth {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #06a44f;
+  margin: 0 0 10px 0;
+}
+
+.card_tagForHarmony {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ff43f7;
+  margin: 0 0 10px 0;
+}
+
+.cta {
+  padding: 60px 0;
+  background: url("/christmas-shop/img/img-compressed/bg-snow.png"), url("/christmas-shop/img/img-compressed/bg-forest.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 548px;
+}
+
+.cta__wrapper {
+  height: 608px;
+}
+
+.cta__content {
+  padding: 30px 507px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  height: 508px;
+}
+.cta__content .caption {
+  margin: 0;
+  width: 426px;
+}
+.cta__content .herp__button {
+  margin: 0;
+}
+
+.cta_text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 152%;
+  letter-spacing: 3.9px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  width: 426px;
+  margin: 0px 0 0 0;
+}
+
+.cta_timerBlock {
+  margin-top: -12px;
+  padding: 8px 12px 12px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  list-style-type: none;
+}
+
+.timer_item {
+  position: relative;
+  width: 80px;
+  margin: 0;
+}
+
+.timer_item:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.timerNumber {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 152%;
+  letter-spacing: 3.9px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: -2px;
+}
+
+.timerText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.cta__button {
+  padding: 20px 32px;
+  color: #fff;
+  background-color: #181c29;
+  border-radius: 20px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  width: 171px;
+  height: 16px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.cta__button .cta_link {
+  font-family: Montserrat-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.cta__button:hover {
+  background-color: #fff;
+}
+.cta__button:hover .cta_link:hover {
+  color: #181c29;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 60px 82px;
+  text-align: center;
+  height: 376px;
+}
+.footer .caption {
+  font-family: "Allura", sans-serif;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  color: #181c29;
+  transition: all 0.3s ease;
+}
+.footer .caption:hover {
+  color: #ff4646;
+}
+
+.contact__link {
+  text-decoration: none;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 58px;
+  height: 204px;
+}
+
+.card_link {
+  background-color: #ecf3f8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 20px;
+  flex: 1;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card_link .card_TextLink {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 152%;
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin: 0;
+  text-decoration: none;
+}
+
+.card_link .card_description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 152%;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin: 0;
+  text-decoration: none;
+}
+
+.card_link:hover .card_TextLink,
+.card_link:hover .card_description {
+  color: #ff4646;
+}
+
+.card_telImage {
+  width: 80px;
+  aspect-ratio: 1/1;
+}
+
+.social__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.social_link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social_link svg path {
+  transition: all 0.3s ease;
+}
+
+.social_link:hover svg path {
+  stroke: #ff4646;
+}
+
+.copiright {
+  font-family: Montserrat-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 148%;
+  color: #181c29;
+  margin-bottom: 12px;
 }/*# sourceMappingURL=style.css.map */

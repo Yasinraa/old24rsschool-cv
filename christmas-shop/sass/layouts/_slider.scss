@@ -1,0 +1,79 @@
+.slider {
+    background: url(/christmas-shop/img/img-compressed/bg-snow.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 488px;
+    align-items: center;
+   
+}
+
+.slider__wrapper {
+    box-sizing: border-box;
+    height: 488px;
+    width: 1276px;
+    padding: 60px 0;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    height: 200px;
+    align-items: center;
+    .img_row {
+        height: 200px;
+        width: 200px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 20px;
+        // padding-right: 20px;
+    }
+    .text_image {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 80px;
+        text-transform: uppercase;
+        color: $static-white;
+        // padding-right: 20px;
+    }
+}
+
+.slider__head {
+    
+    .caption {
+        margin: 0;
+    }
+    h2 {
+        margin-top: 12px;
+    }
+}
+
+.button__arrows {
+    display: flex;
+    align-items: left;
+    padding: 20px 0 0 0;
+    gap: 20px;
+    justify-content: flex-end;
+    .slideButton {
+        border: 1px $static-white solid;
+        border-radius: 20px;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .slideButton:disabled path,
+    .slideButton:disabled {
+        user-select: none;
+        opacity: 0.4;
+        cursor: default;
+    }
+    .sliderButton:hover:not(:disabled) {
+        background-color: $static-white;
+    }
+    .slideButton:hover:not(:disabled) svg path {
+        stroke: $primary;
+    }
+}
