@@ -1,4 +1,4 @@
-@import '../node_modules/normalize.css/normalize.css';
+
 html {
   width: 1440px;
 }
@@ -137,7 +137,7 @@ main {
 }
 
 .hero {
-  background: url(/christmas-shop/img/img-compressed/bg-ball.png), url(/christmas-shop/img/img-compressed/bg-snow.png);
+  background: url(./img/img-compressed/bg-ball.png), url(./img/img-compressed/bg-snow.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -193,7 +193,7 @@ main {
 }
 
 .about {
-  background: url(/christmas-shop/img/img-compressed/bg-snow.png);
+  background: url(./img/img-compressed/bg-snow.png);
   background-size: cover;
   background-position: center;
   margin: auto;
@@ -251,7 +251,7 @@ main {
 }
 
 .slider {
-  background: url(/christmas-shop/img/img-compressed/bg-snow.png);
+  background: url(./img/img-compressed/bg-snow.png);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -330,7 +330,7 @@ main {
 .gifts {
   padding: 60px 8px;
   height: 424px;
-  background: url("/christmas-shop/img/img-compressed/bg-snow.png");
+  background: url("./img/img-compressed/bg-snow.png");
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -428,7 +428,7 @@ h2 {
 
 .cta {
   padding: 60px 0;
-  background: url("/christmas-shop/img/img-compressed/bg-snow.png"), url("/christmas-shop/img/img-compressed/bg-forest.png");
+  background: url("./img/img-compressed/bg-snow.png"), url("./img/img-compressed/bg-forest.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
