@@ -1,0 +1,113 @@
+.footer {
+    background-color: #fff;
+    padding: 60px 82px;
+    text-align: center;
+    height: 376px;
+    
+    .caption {
+            font-family: $second-family;
+            text-decoration: none;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 1.2px;
+            color: $dark;
+            transition: all 0.3s ease;
+        }
+
+    .caption:hover {
+        color: $primary;
+    }
+}
+
+.contact__link {
+    text-decoration: none;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 58px;
+    height: 204px;
+}
+
+.card_link {
+    background-color: $content-background;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    border-radius: 20px;
+    flex: 1;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card_link .card_TextLink {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 3.84px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin: 0;
+    text-decoration: none;
+    
+}
+
+.card_link .card_description {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin: 0;
+    text-decoration: none;
+}
+
+.card_link:hover .card_TextLink,
+.card_link:hover .card_description {
+    color: $primary;
+}
+
+.card_telImage {
+    width: 80px;
+    aspect-ratio: 1/1;
+}
+
+.social__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.social_link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social_link svg path {
+    transition: all 0.3s ease;
+}
+
+.social_link:hover svg path {
+    stroke: $primary;
+}
+
+.copiright {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 16px;
+    line-height: 148%;
+    color: $dark;
+    margin-bottom: 12px;
+}
+
+
