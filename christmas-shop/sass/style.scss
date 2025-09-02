@@ -1,0 +1,18 @@
+@import '../node_modules/normalize.css/normalize.css';
+@import 'abstract/constants';
+@import 'base/_base';
+@import "layouts/wrapper";
+
+// layout
+@import 'layouts/main';
+@import 'layouts/header';
+@import 'layouts/hero';
+@import 'layouts/about';
+@import 'layouts/slider';
+@import 'layouts/gifts';
+@import 'layouts/cta';
+@import 'layouts/footer';
+
+
+
+

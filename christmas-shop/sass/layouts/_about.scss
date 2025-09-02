@@ -1,0 +1,59 @@
+.about {
+    background: url(/christmas-shop/img/img-compressed/bg-snow.png);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    padding: 60px 82px;
+    height: 528px;
+    text-align: center;
+}
+
+.about__wrapper {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    height: 528px;
+    background: $static-white;
+}
+
+.about__content {
+    padding: 0 60px;
+    text-align: left;
+    .caption {
+        color: $primary;
+        text-align: left;
+    }
+    .about_congratulation {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 152%;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: $dark;
+        margin: 20px 0;
+    }
+    .about_text {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 148%;
+        color: $dark;
+        width: 426px;
+    }
+    
+}
+
+.about__img {
+    border: 1px solid black;
+    border-style: solid;
+    border-radius: 20px;
+    border-radius: 20px;
+    height: 528px;
+   
+}
+
+ .about_img {
+     height: 638px;
+     width: 528px;
+ }

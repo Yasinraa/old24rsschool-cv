@@ -1,0 +1,49 @@
+
+html {
+    width: 1440px;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    border-radius: 20px;
+}
+h1 {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $static-white;
+    text-shadow: 0 8px 8px $dark;
+    margin: 12px 0;
+}
+
+h2 {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $static-white;
+}
+
+.caption {
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: $static-white;
+}
+
+a {
+    display: inline-block;
+}

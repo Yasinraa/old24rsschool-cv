@@ -1,0 +1,100 @@
+.gifts {
+    padding: 60px 8px;
+    height: 424px;
+    background: url("/christmas-shop/img/img-compressed/bg-snow.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    text-align: center;
+    color: $static-white;
+}
+
+.gifts__wrapper {
+    height: 434px;
+    .caption {
+        margin: 0 0 15px 0;
+    } 
+}
+
+h2 {
+    margin: 0 0 16px 0;
+}
+
+.cards {
+    display: flex;
+    gap: 12px;
+    height: 342px;
+}
+
+.card{
+    border-radius: 20px;
+    background-color: #ecf3f8;
+    display: flex;
+    flex-direction: column;
+    cursor: url("./pointinghand-BfbZwVOf.svg"), pointer;
+    // width: 310px;
+    // height: 300px;
+}
+
+.card .card_header {
+    font-family: Montserrat-SemiBold, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    color: #181c29;
+    transition: all 0.3s ease;
+    margin: 0;
+}
+
+.card:hover .card_header {
+    color: #ff4646;
+}
+
+.card_img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card_text   {
+    flex: 1;    
+    background-color: $static-white;
+    border-radius: 20px;
+    padding: 19px 20px;
+    text-align: left;
+    // height: 112px;
+}
+
+.card_tagForWork {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $tag-purple;
+    margin: 0 0 10px 0;
+}
+
+ .card_tagForHealth {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $tag-green;
+    margin: 0 0 10px 0;
+}
+
+.card_tagForHarmony {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $tag-pink;
+    margin: 0 0 10px 0;
+}

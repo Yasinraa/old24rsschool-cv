@@ -1,0 +1,129 @@
+.cta {
+    padding: 60px 0;
+    background: url("/christmas-shop/img/img-compressed/bg-snow.png"), url("/christmas-shop/img/img-compressed/bg-forest.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 548px;
+}
+
+.cta__wrapper {
+    height: 608px;
+}
+
+.cta__content {
+    padding: 30px 507px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    height: 508px;
+    .caption {
+        margin: 0;
+        width: 426px;
+    }
+    .herp__button {
+        margin: 0;
+    }
+}
+
+.cta_text {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 3.9px;
+    text-transform: uppercase;
+    
+    
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $static-white;
+    width: 426px;
+    margin: 0px 0 0 0;
+}
+
+.cta_timerBlock {
+    margin-top: -12px;
+    padding: 8px 12px 12px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    list-style-type: none;
+}
+
+.timer_item {
+    position: relative;
+    width: 80px;
+    margin: 0;   
+}
+
+.timer_item:not(:last-child)::after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background-color: $static-white-40;
+}
+
+.timerNumber {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 3.9px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: -2px;
+
+}
+
+.timerText {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.cta__button {
+
+    padding: 20px 32px;
+    color: $static-white;
+    background-color: $dark;
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    width: 171px;
+    height: 16px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .cta_link {
+        font-family: Montserrat-SemiBold, sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 130%;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+
+    }
+}
+
+.cta__button:hover {
+    background-color: #fff;
+    .cta_link:hover {
+        color: $dark;
+    }
+}
